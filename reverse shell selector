@@ -1,4 +1,5 @@
 #!/bin/bash
+#genere rapidement un reverse shell sans avoir à copier à chaque fois l'adresse ip
 
 ip=$(ip -f inet -o addr show tun0|cut -d\  -f 7 | cut -d/ -f 1)
 
